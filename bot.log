@@ -23,3 +23,625 @@
 2025-03-18 13:42:14 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
 2025-03-18 13:43:52 - INFO - Polling stopped
 2025-03-18 13:43:52 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 15:50:48 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@5.166.112.198:5432/aask
+2025-03-18 15:50:49 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@5.166.112.198:5432/aask
+2025-03-18 15:50:49 - INFO - Запуск бота...
+2025-03-18 15:50:49 - INFO - Start polling
+2025-03-18 15:50:49 - INFO - Запуск задачи расписания.
+2025-03-18 15:50:49 - INFO - Следующая отправка расписания через 9550.957585 секунд.
+2025-03-18 15:50:50 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 16:04:40 - INFO - Polling stopped
+2025-03-18 16:04:40 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 16:39:09 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@5.166.112.198:5432/aask
+2025-03-18 16:39:09 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@5.166.112.198:5432/aask
+2025-03-18 16:39:09 - INFO - Запуск бота...
+2025-03-18 16:39:09 - INFO - Start polling
+2025-03-18 16:39:09 - INFO - Запуск задачи по отправке расписания.
+2025-03-18 16:39:09 - INFO - Следующая отправка расписания через 1 ч 50 мин 50 сек.
+2025-03-18 16:39:09 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 16:39:14 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 16:39:14 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8157590093)
+2025-03-18 16:39:20 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 16:39:20 - WARNING - Sleep for 1.469802 seconds and try again... (tryings = 1, bot id = 8157590093)
+2025-03-18 16:39:26 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 16:39:26 - WARNING - Sleep for 2.035309 seconds and try again... (tryings = 2, bot id = 8157590093)
+2025-03-18 16:39:34 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 16:39:34 - WARNING - Sleep for 2.559073 seconds and try again... (tryings = 3, bot id = 8157590093)
+2025-03-18 16:39:39 - INFO - Polling stopped
+2025-03-18 16:39:39 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 17:17:40 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@5.166.112.198:5432/aask
+2025-03-18 17:17:40 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@5.166.112.198:5432/aask
+2025-03-18 17:17:40 - INFO - Запуск бота...
+2025-03-18 17:17:40 - INFO - Start polling
+2025-03-18 17:17:40 - INFO - Запуск задачи расписания.
+2025-03-18 17:17:40 - INFO - Следующая отправка расписания через 4339.808125 секунд.
+2025-03-18 17:17:41 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 17:17:52 - INFO - Update id=691379399 is handled. Duration 765 ms by bot id=8157590093
+2025-03-18 17:17:56 - INFO - Update id=691379400 is handled. Duration 734 ms by bot id=8157590093
+2025-03-18 17:18:20 - ERROR - Ошибка подключения к базе данных: [WinError 121] Превышен таймаут семафора
+2025-03-18 17:18:20 - INFO - Update id=691379401 is not handled. Duration 21500 ms by bot id=8157590093
+2025-03-18 17:18:20 - ERROR - Cause exception while process update id=691379401 by bot id=8157590093
+OSError: [WinError 121] Превышен таймаут семафора
+Traceback (most recent call last):
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\app\yes_handler.py", line 17, in yes
+    async with db:
+  File "C:\Рабочий стол\tg\Database\db.py", line 18, in __aenter__
+    await self.connect()
+  File "C:\Рабочий стол\tg\Database\db.py", line 27, in connect
+    self._pool = await asyncpg.create_pool(dsn=self._db_url)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\pool.py", line 418, in _async__init__
+    await self._initialize()
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\pool.py", line 445, in _initialize
+    await first_ch.connect()
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\pool.py", line 132, in connect
+    self._con = await self._pool._get_new_connection()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\pool.py", line 517, in _get_new_connection
+    con = await self._connect(
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\connection.py", line 2421, in connect
+    return await connect_utils._connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\connect_utils.py", line 1075, in _connect
+    raise last_error or exceptions.TargetServerAttributeNotMatched(
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\connect_utils.py", line 1049, in _connect
+    conn = await _connect_addr(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\connect_utils.py", line 886, in _connect_addr
+    return await __connect_addr(params, True, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\connect_utils.py", line 931, in __connect_addr
+    tr, pr = await connector
+             ^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\connect_utils.py", line 802, in _create_ssl_connection
+    tr, pr = await loop.create_connection(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1086, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1070, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 974, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 726, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 854, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 641, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] Превышен таймаут семафора
+2025-03-18 17:21:14 - INFO - Polling stopped
+2025-03-18 17:21:14 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 17:23:53 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@5.166.112.198:5432/aask
+2025-03-18 17:23:53 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@5.166.112.198:5432/aask
+2025-03-18 17:23:53 - INFO - Запуск бота...
+2025-03-18 17:23:53 - INFO - Start polling
+2025-03-18 17:23:53 - INFO - Запуск задачи расписания.
+2025-03-18 17:23:53 - INFO - Следующая отправка расписания через 3966.272796 секунд.
+2025-03-18 17:23:54 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 17:24:03 - INFO - Update id=691379402 is handled. Duration 766 ms by bot id=8157590093
+2025-03-18 17:24:25 - ERROR - Ошибка подключения к базе данных: [WinError 121] Превышен таймаут семафора
+2025-03-18 17:24:25 - INFO - Update id=691379403 is not handled. Duration 21312 ms by bot id=8157590093
+2025-03-18 17:24:25 - ERROR - Cause exception while process update id=691379403 by bot id=8157590093
+OSError: [WinError 121] Превышен таймаут семафора
+Traceback (most recent call last):
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\app\yes_handler.py", line 17, in yes
+    async with db:
+  File "C:\Рабочий стол\tg\Database\db.py", line 18, in __aenter__
+    await self.connect()
+  File "C:\Рабочий стол\tg\Database\db.py", line 27, in connect
+    self._pool = await asyncpg.create_pool(dsn=self._db_url)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\pool.py", line 418, in _async__init__
+    await self._initialize()
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\pool.py", line 445, in _initialize
+    await first_ch.connect()
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\pool.py", line 132, in connect
+    self._con = await self._pool._get_new_connection()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\pool.py", line 517, in _get_new_connection
+    con = await self._connect(
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\connection.py", line 2421, in connect
+    return await connect_utils._connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\connect_utils.py", line 1075, in _connect
+    raise last_error or exceptions.TargetServerAttributeNotMatched(
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\connect_utils.py", line 1049, in _connect
+    conn = await _connect_addr(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\connect_utils.py", line 886, in _connect_addr
+    return await __connect_addr(params, True, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\connect_utils.py", line 931, in __connect_addr
+    tr, pr = await connector
+             ^^^^^^^^^^^^^^^
+  File "C:\Рабочий стол\tg\venv\Lib\site-packages\asyncpg\connect_utils.py", line 802, in _create_ssl_connection
+    tr, pr = await loop.create_connection(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1086, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1070, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 974, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 726, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 854, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 641, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] Превышен таймаут семафора
+2025-03-18 17:25:41 - INFO - Polling stopped
+2025-03-18 17:25:41 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 17:25:52 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 17:25:52 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 17:25:52 - INFO - Запуск бота...
+2025-03-18 17:25:52 - INFO - Start polling
+2025-03-18 17:25:52 - INFO - Запуск задачи расписания.
+2025-03-18 17:25:52 - INFO - Следующая отправка расписания через 3847.500979 секунд.
+2025-03-18 17:25:53 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 17:25:56 - INFO - Update id=691379404 is handled. Duration 672 ms by bot id=8157590093
+2025-03-18 17:26:01 - INFO - Подключение к базе данных установлено
+2025-03-18 17:26:02 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 17:26:03 - INFO - Контакт с chat_id=1529963230, из группы=СЭЗС-41 добавлен в базу данных.
+2025-03-18 17:26:03 - INFO - Соединение с базой данных закрыто
+2025-03-18 17:26:03 - INFO - Update id=691379405 is handled. Duration 5578 ms by bot id=8157590093
+2025-03-18 17:26:16 - INFO - Update id=691379406 is handled. Duration 500 ms by bot id=8157590093
+2025-03-18 17:26:20 - INFO - Подключение к базе данных установлено
+2025-03-18 17:26:21 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 17:26:22 - INFO - Контакт с chat_id=1529963230, из группы=ПНСК-41 добавлен в базу данных.
+2025-03-18 17:26:22 - INFO - Соединение с базой данных закрыто
+2025-03-18 17:26:22 - INFO - Update id=691379407 is handled. Duration 5233 ms by bot id=8157590093
+2025-03-18 17:26:53 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 17:26:53 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8157590093)
+2025-03-18 17:26:59 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 17:26:59 - WARNING - Sleep for 1.401140 seconds and try again... (tryings = 1, bot id = 8157590093)
+2025-03-18 17:27:04 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 17:27:04 - WARNING - Sleep for 1.850586 seconds and try again... (tryings = 2, bot id = 8157590093)
+2025-03-18 17:27:11 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 17:27:11 - WARNING - Sleep for 2.385510 seconds and try again... (tryings = 3, bot id = 8157590093)
+2025-03-18 17:27:19 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 17:27:19 - WARNING - Sleep for 3.226308 seconds and try again... (tryings = 4, bot id = 8157590093)
+2025-03-18 17:27:28 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 17:27:28 - WARNING - Sleep for 4.491156 seconds and try again... (tryings = 5, bot id = 8157590093)
+2025-03-18 17:27:37 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 17:27:37 - WARNING - Sleep for 4.812847 seconds and try again... (tryings = 6, bot id = 8157590093)
+2025-03-18 17:27:46 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 17:27:46 - WARNING - Sleep for 4.871448 seconds and try again... (tryings = 7, bot id = 8157590093)
+2025-03-18 17:27:56 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 17:27:56 - WARNING - Sleep for 4.852702 seconds and try again... (tryings = 8, bot id = 8157590093)
+2025-03-18 17:28:06 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 17:28:06 - WARNING - Sleep for 5.130395 seconds and try again... (tryings = 9, bot id = 8157590093)
+2025-03-18 17:28:17 - INFO - Polling stopped
+2025-03-18 17:28:17 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 17:35:05 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 17:35:05 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 17:35:05 - INFO - Запуск бота...
+2025-03-18 17:35:05 - INFO - Start polling
+2025-03-18 17:35:05 - INFO - Запуск задачи расписания.
+2025-03-18 17:35:05 - INFO - Следующая отправка расписания через 3294.787773 секунд.
+2025-03-18 17:35:05 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 17:35:06 - INFO - Update id=691379414 is handled. Duration 656 ms by bot id=8157590093
+2025-03-18 17:35:14 - INFO - Подключение к базе данных установлено
+2025-03-18 17:35:16 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 17:35:16 - INFO - Контакт с chat_id=713463226, из группы=ИСиП-21 добавлен в базу данных.
+2025-03-18 17:35:17 - INFO - Соединение с базой данных закрыто
+2025-03-18 17:35:17 - INFO - Update id=691379415 is handled. Duration 7687 ms by bot id=8157590093
+2025-03-18 17:35:36 - INFO - Update id=691379416 is handled. Duration 296 ms by bot id=8157590093
+2025-03-18 17:35:42 - INFO - Update id=691379417 is handled. Duration 657 ms by bot id=8157590093
+2025-03-18 17:36:09 - INFO - Подключение к базе данных установлено
+2025-03-18 17:36:10 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 17:36:10 - INFO - Контакт с chat_id=1529963230, из группы=ИСиП-21 добавлен в базу данных.
+2025-03-18 17:36:11 - INFO - Соединение с базой данных закрыто
+2025-03-18 17:36:11 - INFO - Update id=691379418 is handled. Duration 21655 ms by bot id=8157590093
+2025-03-18 17:36:18 - INFO - Update id=691379419 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:36:20 - INFO - Update id=691379420 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:36:21 - INFO - Update id=691379421 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:36:23 - INFO - Update id=691379422 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:36:25 - INFO - Update id=691379423 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:36:26 - INFO - Update id=691379424 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:36:28 - INFO - Update id=691379425 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:36:30 - INFO - Update id=691379426 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:36:31 - INFO - Update id=691379427 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:36:33 - INFO - Update id=691379428 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:37:57 - INFO - Polling stopped
+2025-03-18 17:37:57 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 17:38:08 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 17:38:08 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 17:38:08 - INFO - Запуск бота...
+2025-03-18 17:38:08 - INFO - Start polling
+2025-03-18 17:38:08 - INFO - Запуск задачи расписания.
+2025-03-18 17:38:08 - INFO - Следующая отправка расписания через 3111.285108 секунд.
+2025-03-18 17:38:09 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 17:38:19 - INFO - Update id=691379429 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:20 - INFO - Update id=691379430 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:21 - INFO - Update id=691379431 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:21 - INFO - Update id=691379432 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:22 - INFO - Update id=691379433 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:22 - INFO - Update id=691379434 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:23 - INFO - Update id=691379435 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:24 - INFO - Update id=691379436 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:25 - INFO - Update id=691379437 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:25 - INFO - Update id=691379438 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:26 - INFO - Update id=691379439 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:27 - INFO - Update id=691379440 is not handled. Duration 16 ms by bot id=8157590093
+2025-03-18 17:38:28 - INFO - Update id=691379441 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:29 - INFO - Update id=691379442 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:30 - INFO - Update id=691379443 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:31 - INFO - Update id=691379444 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:32 - INFO - Update id=691379445 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:33 - INFO - Update id=691379446 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:34 - INFO - Update id=691379447 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:35 - INFO - Update id=691379448 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:36 - INFO - Update id=691379449 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:37 - INFO - Update id=691379450 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:38 - INFO - Update id=691379451 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:39 - INFO - Update id=691379452 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:40 - INFO - Update id=691379453 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:40 - INFO - Update id=691379454 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:42 - INFO - Update id=691379455 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:42 - INFO - Update id=691379456 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:43 - INFO - Update id=691379457 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:43 - INFO - Update id=691379458 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:45 - INFO - Update id=691379459 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:46 - INFO - Update id=691379460 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:46 - INFO - Update id=691379461 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:47 - INFO - Update id=691379462 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:48 - INFO - Update id=691379463 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:49 - INFO - Update id=691379464 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:49 - INFO - Update id=691379465 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:50 - INFO - Update id=691379466 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:51 - INFO - Update id=691379467 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:51 - INFO - Update id=691379468 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:52 - INFO - Update id=691379469 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:53 - INFO - Update id=691379470 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:54 - INFO - Update id=691379471 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:54 - INFO - Update id=691379472 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:55 - INFO - Update id=691379473 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:56 - INFO - Update id=691379474 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:56 - INFO - Update id=691379475 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:58 - INFO - Update id=691379476 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:58 - INFO - Update id=691379477 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:38:59 - INFO - Update id=691379478 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:00 - INFO - Update id=691379479 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:00 - INFO - Update id=691379480 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:02 - INFO - Update id=691379481 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:03 - INFO - Update id=691379482 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:28 - INFO - Update id=691379483 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:28 - INFO - Update id=691379484 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:29 - INFO - Update id=691379485 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:30 - INFO - Update id=691379486 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:31 - INFO - Update id=691379487 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:33 - INFO - Update id=691379488 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:34 - INFO - Update id=691379489 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:35 - INFO - Update id=691379490 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:36 - INFO - Update id=691379491 is not handled. Duration 16 ms by bot id=8157590093
+2025-03-18 17:39:37 - INFO - Update id=691379492 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:39 - INFO - Update id=691379493 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:40 - INFO - Update id=691379494 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:41 - INFO - Update id=691379495 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:41 - INFO - Update id=691379496 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:42 - INFO - Update id=691379497 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:43 - INFO - Update id=691379498 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:43 - INFO - Update id=691379499 is not handled. Duration 16 ms by bot id=8157590093
+2025-03-18 17:39:45 - INFO - Update id=691379500 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:46 - INFO - Update id=691379501 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:47 - INFO - Update id=691379502 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:50 - INFO - Update id=691379503 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:51 - INFO - Update id=691379504 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:52 - INFO - Update id=691379505 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:55 - INFO - Update id=691379506 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:39:56 - INFO - Update id=691379507 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:40:00 - INFO - Update id=691379508 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:40:01 - INFO - Update id=691379509 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:40:02 - INFO - Update id=691379510 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:40:03 - INFO - Update id=691379511 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:40:04 - INFO - Update id=691379512 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:40:05 - INFO - Update id=691379513 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:40:06 - INFO - Update id=691379514 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:40:07 - INFO - Update id=691379515 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:40:07 - INFO - Update id=691379516 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:40:08 - INFO - Update id=691379517 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:40:08 - INFO - Update id=691379518 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:41:34 - INFO - Polling stopped
+2025-03-18 17:41:34 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 17:41:53 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 17:41:53 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 17:41:53 - INFO - Запуск бота...
+2025-03-18 17:41:53 - INFO - Start polling
+2025-03-18 17:41:53 - INFO - Запуск задачи расписания.
+2025-03-18 17:41:53 - INFO - Следующая отправка расписания через 2886.23618 секунд.
+2025-03-18 17:41:54 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 17:41:58 - INFO - Update id=691379519 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:42:00 - INFO - Update id=691379520 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:42:02 - INFO - Update id=691379521 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:42:03 - INFO - Update id=691379522 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:42:05 - INFO - Update id=691379523 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:42:06 - INFO - Update id=691379524 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:42:09 - INFO - Update id=691379525 is handled. Duration 703 ms by bot id=8157590093
+2025-03-18 17:42:14 - INFO - Подключение к базе данных установлено
+2025-03-18 17:42:14 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 17:42:15 - INFO - Контакт с chat_id=1529963230, из группы=Д-12 добавлен в базу данных.
+2025-03-18 17:42:15 - INFO - Соединение с базой данных закрыто
+2025-03-18 17:42:15 - INFO - Update id=691379526 is handled. Duration 5780 ms by bot id=8157590093
+2025-03-18 17:42:22 - INFO - Update id=691379527 is handled. Duration 375 ms by bot id=8157590093
+2025-03-18 17:42:27 - INFO - Подключение к базе данных установлено
+2025-03-18 17:42:27 - INFO - Update id=691379529 is handled. Duration 391 ms by bot id=8157590093
+2025-03-18 17:42:27 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 17:42:28 - INFO - Контакт с chat_id=1529963230, из группы=СЭЗС-34 добавлен в базу данных.
+2025-03-18 17:42:29 - INFO - Соединение с базой данных закрыто
+2025-03-18 17:42:29 - INFO - Update id=691379528 is handled. Duration 5407 ms by bot id=8157590093
+2025-03-18 17:42:32 - INFO - Подключение к базе данных установлено
+2025-03-18 17:42:33 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 17:42:34 - INFO - Контакт с chat_id=1529963230, из группы=ПНСК-42 добавлен в базу данных.
+2025-03-18 17:42:34 - INFO - Соединение с базой данных закрыто
+2025-03-18 17:42:34 - INFO - Update id=691379530 is handled. Duration 5264 ms by bot id=8157590093
+2025-03-18 17:42:40 - INFO - Update id=691379531 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:42:41 - INFO - Update id=691379532 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:42:42 - INFO - Update id=691379533 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:42:44 - INFO - Update id=691379534 is not handled. Duration 15 ms by bot id=8157590093
+2025-03-18 17:42:49 - INFO - Update id=691379535 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:42:52 - INFO - Update id=691379536 is not handled. Duration 16 ms by bot id=8157590093
+2025-03-18 17:42:53 - INFO - Update id=691379537 is not handled. Duration 16 ms by bot id=8157590093
+2025-03-18 17:42:55 - INFO - Update id=691379538 is not handled. Duration 0 ms by bot id=8157590093
+2025-03-18 17:42:56 - INFO - Update id=691379539 is not handled. Duration 16 ms by bot id=8157590093
+2025-03-18 17:43:01 - INFO - Update id=691379540 is handled. Duration 219 ms by bot id=8157590093
+2025-03-18 17:43:03 - INFO - Update id=691379541 is handled. Duration 500 ms by bot id=8157590093
+2025-03-18 17:43:06 - INFO - Update id=691379543 is handled. Duration 546 ms by bot id=8157590093
+2025-03-18 17:43:07 - INFO - Подключение к базе данных установлено
+2025-03-18 17:43:08 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 17:43:09 - INFO - Update id=691379545 is handled. Duration 483 ms by bot id=8157590093
+2025-03-18 17:43:09 - INFO - Контакт с chat_id=1529963230, из группы=СЭЗС-34 добавлен в базу данных.
+2025-03-18 17:43:09 - INFO - Соединение с базой данных закрыто
+2025-03-18 17:43:09 - INFO - Update id=691379542 is handled. Duration 5608 ms by bot id=8157590093
+2025-03-18 17:43:10 - INFO - Update id=691379546 is handled. Duration 766 ms by bot id=8157590093
+2025-03-18 17:43:10 - INFO - Подключение к базе данных установлено
+2025-03-18 17:43:11 - INFO - Update id=691379547 is handled. Duration 296 ms by bot id=8157590093
+2025-03-18 17:43:11 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 17:43:12 - INFO - Контакт с chat_id=1529963230, из группы=СЭЗС-44 добавлен в базу данных.
+2025-03-18 17:43:12 - INFO - Соединение с базой данных закрыто
+2025-03-18 17:43:12 - INFO - Update id=691379544 is handled. Duration 5562 ms by bot id=8157590093
+2025-03-18 17:43:13 - INFO - Update id=691379548 is handled. Duration 407 ms by bot id=8157590093
+2025-03-18 17:43:17 - INFO - Подключение к базе данных установлено
+2025-03-18 17:43:17 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 17:43:18 - INFO - Контакт с chat_id=1529963230, из группы=СЭЗС-11 добавлен в базу данных.
+2025-03-18 17:43:18 - INFO - Соединение с базой данных закрыто
+2025-03-18 17:43:18 - INFO - Update id=691379549 is handled. Duration 5265 ms by bot id=8157590093
+2025-03-18 17:44:53 - INFO - Polling stopped
+2025-03-18 17:44:53 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 19:58:59 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 19:58:59 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 19:58:59 - INFO - Запуск бота...
+2025-03-18 19:58:59 - INFO - Start polling
+2025-03-18 19:58:59 - INFO - Запуск задачи расписания.
+2025-03-18 19:58:59 - INFO - Следующая отправка расписания через 60.833263 секунд.
+2025-03-18 19:59:06 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 19:59:11 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 19:59:11 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8157590093)
+2025-03-18 19:59:23 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 19:59:23 - WARNING - Sleep for 1.384199 seconds and try again... (tryings = 1, bot id = 8157590093)
+2025-03-18 19:59:30 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 19:59:30 - WARNING - Sleep for 1.930963 seconds and try again... (tryings = 2, bot id = 8157590093)
+2025-03-18 19:59:41 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 19:59:41 - WARNING - Sleep for 2.492930 seconds and try again... (tryings = 3, bot id = 8157590093)
+2025-03-18 19:59:48 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 19:59:48 - WARNING - Sleep for 3.399082 seconds and try again... (tryings = 4, bot id = 8157590093)
+2025-03-18 20:00:00 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 20:00:23 - ERROR - Ошибка подключения к базе данных: [WinError 121] Превышен таймаут семафора
+2025-03-18 20:00:23 - ERROR - Ошибка при получении данных из базы: [WinError 121] Превышен таймаут семафора
+2025-03-18 20:00:23 - INFO - Запуск задачи расписания.
+2025-03-18 20:00:23 - INFO - Следующая отправка расписания через 86376.685752 секунд.
+2025-03-18 20:00:29 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:00:29 - WARNING - Sleep for 4.362693 seconds and try again... (tryings = 5, bot id = 8157590093)
+2025-03-18 20:00:41 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:00:41 - WARNING - Sleep for 4.912598 seconds and try again... (tryings = 6, bot id = 8157590093)
+2025-03-18 20:00:51 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:00:51 - WARNING - Sleep for 4.857312 seconds and try again... (tryings = 7, bot id = 8157590093)
+2025-03-18 20:01:01 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:01:01 - WARNING - Sleep for 4.866914 seconds and try again... (tryings = 8, bot id = 8157590093)
+2025-03-18 20:01:11 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:01:11 - WARNING - Sleep for 4.989799 seconds and try again... (tryings = 9, bot id = 8157590093)
+2025-03-18 20:01:25 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2025-03-18 20:01:25 - WARNING - Sleep for 4.996171 seconds and try again... (tryings = 10, bot id = 8157590093)
+2025-03-18 20:01:35 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:01:35 - WARNING - Sleep for 4.962773 seconds and try again... (tryings = 11, bot id = 8157590093)
+2025-03-18 20:01:45 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:01:45 - WARNING - Sleep for 5.071231 seconds and try again... (tryings = 12, bot id = 8157590093)
+2025-03-18 20:01:55 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:01:55 - WARNING - Sleep for 4.861647 seconds and try again... (tryings = 13, bot id = 8157590093)
+2025-03-18 20:02:05 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:02:05 - WARNING - Sleep for 5.220228 seconds and try again... (tryings = 14, bot id = 8157590093)
+2025-03-18 20:02:13 - INFO - Polling stopped
+2025-03-18 20:02:13 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 20:02:18 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 20:02:18 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 20:02:18 - INFO - Запуск бота...
+2025-03-18 20:02:18 - INFO - Start polling
+2025-03-18 20:02:18 - INFO - Запуск задачи расписания.
+2025-03-18 20:02:18 - INFO - Следующая отправка расписания через 41.17505 секунд.
+2025-03-18 20:02:19 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 20:02:23 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:02:23 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8157590093)
+2025-03-18 20:02:33 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:02:33 - WARNING - Sleep for 1.284757 seconds and try again... (tryings = 1, bot id = 8157590093)
+2025-03-18 20:02:42 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:02:42 - WARNING - Sleep for 1.656842 seconds and try again... (tryings = 2, bot id = 8157590093)
+2025-03-18 20:02:53 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:02:53 - WARNING - Sleep for 2.073137 seconds and try again... (tryings = 3, bot id = 8157590093)
+2025-03-18 20:03:00 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@petya.ddns.net:5432/aask
+2025-03-18 20:03:03 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:03:03 - WARNING - Sleep for 2.677098 seconds and try again... (tryings = 4, bot id = 8157590093)
+2025-03-18 20:03:08 - INFO - Подключение к базе данных установлено
+2025-03-18 20:03:09 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 20:03:09 - INFO - Генерация расписания для группы ИСиП-21...
+2025-03-18 20:03:11 - INFO - Расписание для ИСиП-21 сохранено в C:\Рабочий стол\tg\schedule.png.
+2025-03-18 20:03:13 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:03:13 - WARNING - Sleep for 3.410194 seconds and try again... (tryings = 5, bot id = 8157590093)
+2025-03-18 20:03:22 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:03:22 - WARNING - Sleep for 4.469571 seconds and try again... (tryings = 6, bot id = 8157590093)
+2025-03-18 20:03:33 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:03:33 - WARNING - Sleep for 4.991320 seconds and try again... (tryings = 7, bot id = 8157590093)
+2025-03-18 20:03:44 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 20:03:44 - WARNING - Sleep for 5.073363 seconds and try again... (tryings = 8, bot id = 8157590093)
+2025-03-18 20:03:46 - INFO - Polling stopped
+2025-03-18 20:03:47 - INFO - Соединение с базой данных закрыто
+2025-03-18 20:03:47 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 21:06:39 - INFO - Запуск бота...
+2025-03-18 21:06:39 - INFO - Start polling
+2025-03-18 21:06:39 - INFO - Polling stopped
+2025-03-18 21:06:39 - ERROR - Ошибка при запуске бота: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-03-18 21:07:18 - INFO - Запуск бота...
+2025-03-18 21:07:18 - INFO - Start polling
+2025-03-18 21:07:18 - INFO - Polling stopped
+2025-03-18 21:07:18 - ERROR - Ошибка при запуске бота: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-03-18 21:09:27 - INFO - Запуск бота...
+2025-03-18 21:09:27 - INFO - Start polling
+2025-03-18 21:09:28 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 21:09:32 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:09:32 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8157590093)
+2025-03-18 21:09:38 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:09:38 - WARNING - Sleep for 1.208557 seconds and try again... (tryings = 1, bot id = 8157590093)
+2025-03-18 21:09:44 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:09:44 - WARNING - Sleep for 1.410154 seconds and try again... (tryings = 2, bot id = 8157590093)
+2025-03-18 21:09:51 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:09:51 - WARNING - Sleep for 1.970852 seconds and try again... (tryings = 3, bot id = 8157590093)
+2025-03-18 21:09:59 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:09:59 - WARNING - Sleep for 2.609644 seconds and try again... (tryings = 4, bot id = 8157590093)
+2025-03-18 21:10:06 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:10:06 - WARNING - Sleep for 3.417375 seconds and try again... (tryings = 5, bot id = 8157590093)
+2025-03-18 21:10:15 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:10:15 - WARNING - Sleep for 4.631936 seconds and try again... (tryings = 6, bot id = 8157590093)
+2025-03-18 21:10:24 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:10:24 - WARNING - Sleep for 5.050548 seconds and try again... (tryings = 7, bot id = 8157590093)
+2025-03-18 21:10:35 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:10:35 - WARNING - Sleep for 4.909089 seconds and try again... (tryings = 8, bot id = 8157590093)
+2025-03-18 21:10:45 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:10:45 - WARNING - Sleep for 5.055329 seconds and try again... (tryings = 9, bot id = 8157590093)
+2025-03-18 21:10:55 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:10:55 - WARNING - Sleep for 5.059859 seconds and try again... (tryings = 10, bot id = 8157590093)
+2025-03-18 21:11:06 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:11:06 - WARNING - Sleep for 5.094543 seconds and try again... (tryings = 11, bot id = 8157590093)
+2025-03-18 21:11:16 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-18 21:11:16 - WARNING - Sleep for 5.067025 seconds and try again... (tryings = 12, bot id = 8157590093)
+2025-03-18 21:11:31 - INFO - Connection established (tryings = 13, bot id = 8157590093)
+2025-03-18 21:12:27 - INFO - Polling stopped
+2025-03-18 21:12:27 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 21:12:35 - INFO - Запуск бота...
+2025-03-18 21:12:35 - INFO - Start polling
+2025-03-18 21:12:37 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 21:13:04 - INFO - Подключение к базе данных установлено
+2025-03-18 21:13:06 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 21:13:15 - INFO - Соединение с базой данных закрыто
+2025-03-18 21:18:47 - INFO - Polling stopped
+2025-03-18 21:18:47 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 21:19:17 - INFO - Запуск бота...
+2025-03-18 21:19:17 - INFO - Start polling
+2025-03-18 21:19:18 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 21:20:07 - INFO - Подключение к базе данных установлено
+2025-03-18 21:20:09 - INFO - Таблица aask_users создана или уже существует.
+2025-03-18 21:20:17 - INFO - Соединение с базой данных закрыто
+2025-03-18 21:20:56 - INFO - Polling stopped
+2025-03-18 21:20:56 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'

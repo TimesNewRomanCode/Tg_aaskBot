@@ -12,7 +12,7 @@ class Database:
         self._pool = None
         self._db_url = os.getenv("PG_LINK")
 
-        logger.info("Создан экземпляр Database с URL: %s", self._db_url)
+        logger.info("Создан экземпляр Database с URL:s %", self._db_url)
 
     async def __aenter__(self):
         await self.connect()

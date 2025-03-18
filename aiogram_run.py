@@ -4,17 +4,6 @@ from app.get_photo import run_scheduler
 from create_bot import bot, dp
 from app import start_router, answer_button_router, get_photo_router, yes_handler_router
 
-# Настраиваем логирование
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-    handlers=[
-        logging.FileHandler("bot.log", encoding="utf-8"),
-        logging.StreamHandler()
-    ]
-)
-
 
 async def main():
     logging.info("Запуск бота...")
