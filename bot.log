@@ -1,0 +1,25 @@
+2025-03-18 13:38:50 - INFO - Запуск бота...
+2025-03-18 13:38:50 - INFO - Start polling
+2025-03-18 13:38:50 - INFO - Запуск задачи расписания.
+2025-03-18 13:38:50 - INFO - Следующая отправка расписания через 17469.594337 секунд.
+2025-03-18 13:38:51 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 13:40:33 - INFO - Polling stopped
+2025-03-18 13:40:33 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 13:40:42 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@5.166.112.198:5432/aask
+2025-03-18 13:40:42 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@5.166.112.198:5432/aask
+2025-03-18 13:40:42 - INFO - Запуск бота...
+2025-03-18 13:40:42 - INFO - Start polling
+2025-03-18 13:40:42 - INFO - Запуск задачи расписания.
+2025-03-18 13:40:42 - INFO - Следующая отправка расписания через 17357.704686 секунд.
+2025-03-18 13:40:42 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 13:41:58 - INFO - Polling stopped
+2025-03-18 13:41:58 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 13:42:13 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@5.166.112.198:5432/aask
+2025-03-18 13:42:13 - INFO - Создан экземпляр Database с URL: postgresql://postgres:9952451822@5.166.112.198:5432/aask
+2025-03-18 13:42:13 - INFO - Запуск бота...
+2025-03-18 13:42:13 - INFO - Start polling
+2025-03-18 13:42:13 - INFO - Запуск задачи расписания.
+2025-03-18 13:42:13 - INFO - Следующая отправка расписания через 17266.488326 секунд.
+2025-03-18 13:42:14 - INFO - Run polling for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'
+2025-03-18 13:43:52 - INFO - Polling stopped
+2025-03-18 13:43:52 - INFO - Polling stopped for bot @aask_timesheet_bot id=8157590093 - 'aask_bot'

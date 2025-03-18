@@ -1,0 +1,8 @@
+aiogram
+asyncpg
+requests
+pandas
+matplotlib
+python-dotenv
+xlrd
+openpyxl
