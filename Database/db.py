@@ -2,6 +2,7 @@ import asyncpg
 import os
 import logging
 from dotenv import load_dotenv
+from datetime import datetime 
 
 load_dotenv()
 
@@ -29,6 +30,7 @@ class Database:
             await self.create_table()
         except Exception as e:
             logger.error("Ошибка подключения к базе данных: %s", e)
+            print("Ошибка подключения к базе данных: %s", e)
             raise
 
     async def disconnect(self):
@@ -65,43 +67,47 @@ class Database:
     async def create_table(self):
         """Создаёт таблицу user_contacts, если её нет, и добавляет столбец company_id_by_contact, если он отсутствует."""
         create_table_query = """
-        CREATE TABLE IF NOT EXISTS aask_users (
+        CREATE TABLE IF NOT EXISTS aaskUsers (
         chat_id BIGINT PRIMARY KEY,
-        group_name VARCHAR(10) NOT NULL
+        group_name VARCHAR(10) NOT NULL,
+        username VARCHAR(50),
+        date_registr TIMESTAMP
          );
         """
         await self.execute(create_table_query)
-        logger.info("Таблица aask_users создана или уже существует.")
+        logger.info("Таблица aaskUsers создана или уже существует.")
 
-    async def add_contact(self, chat_id: int, group_name: str):
+    async def add_contact(self, chat_id: int, group_name: str, username: str, date_registr: datetime):
         """Добавляет контакт в таблицу user_contacts с учетом company_id_by_contact"""
         insert_query = """
-        INSERT INTO aask_users (chat_id, group_name)
-        VALUES ($1, $2)
+        INSERT INTO aaskUsers (chat_id, group_name, username, date_registr)
+        VALUES ($1, $2, $3, $4)
         ON CONFLICT (chat_id) DO UPDATE SET group_name = $2;
         """
-        await self.execute(insert_query, chat_id, group_name)
-        logger.info(
-            f"Контакт с chat_id={chat_id}, из группы={group_name} добавлен в базу данных."
-        )
+        await self.execute(insert_query, chat_id, group_name, username, date_registr)
+        logger.info(f"Контакт с chat_id={chat_id}, из группы={group_name}, c именем={username}, в {date_registr} добавлен в базу данных.")
+        print(f"Новый пользователь: с chat_id={chat_id}, из группы={group_name}, c именем={username}, в {date_registr} добавлен в базу данных.")
+
     async def get_group_name_by_chat_id(self, chat_id: int):
         query = """
            SELECT get_group_name
-           FROM aask_users
+           FROM aaskUsers
            WHERE chat_id = $1;
            """
         company_id = await self.fetchval(query, chat_id)
         if company_id is not None:
             logger.info(f"Найден company_id={company_id} для chat_id={chat_id}.")
+            print(f"Найден company_id={company_id} для chat_id={chat_id}.")
         else:
             logger.info(f"Компания для chat_id={chat_id} не найдена.")
+            print(f"Компания для chat_id={chat_id} не найдена.")
         return company_id
 
     async def get_all_group_ids(self):
         """Возвращает все chat_id для каждой группы из базы данных."""
         query = """
         SELECT chat_id, group_name
-        FROM aask_users
+        FROM aaskUsers
         WHERE group_name = ANY($1);
         """
         group_names = [
