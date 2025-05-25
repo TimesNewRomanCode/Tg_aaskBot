@@ -9,10 +9,9 @@ from create_bot import bot
 
 get_photo_router = Router()
 
-@get_photo_router.message(F.text == 'Да1')
+@get_photo_router.message(F.text == '28733')
 async def get_photo(message: types.Message = None):
-    """Обработчик команды 'Да1'."""
-    print("Команда 'Да1' получена")
+    print("Команда '28733' получена")
     db = Database()
     try:
         async with db:
@@ -27,6 +26,7 @@ async def get_photo(message: types.Message = None):
                     print(f"Расписание для группы {group_name} отправлено в чат {chat_id}.")
                 except Exception as e:
                     print(f"Ошибка при отправке расписания для группы {group_name}: {e}")
+            
     except Exception as e:
         print(f"Ошибка при получении данных из базы: {e}")
 
@@ -34,7 +34,7 @@ async def scheduled_task():
     """Задача отправки расписания в определённое время."""
     print("Запуск задачи...")
 
-    target_time = time(21, 22)
+    target_time = time(16, 30)
     now = datetime.now()
     next_run = datetime.combine(now.date(), target_time)
 
@@ -44,7 +44,10 @@ async def scheduled_task():
         next_run = datetime.combine((now + timedelta(days=1)).date(), target_time)
 
     delay = (next_run - now).total_seconds()
-    print(f"Задача начнётся через {delay} секунд.")
+    hours = int(delay//3600)
+    minutes = int((delay%3600)//60)
+    seconds = int((delay%3600)%60)
+    print(f"Задача начнётся через {hours:02}:{minutes:02}:{seconds:02}")
 
     await asyncio.sleep(delay)
 
@@ -59,6 +62,7 @@ async def scheduled_task():
 
                 try:
                     await bot.send_photo(chat_id, types.FSInputFile(file_path))
+                    
                     print(f"Расписание для группы {group_name} отправлено в чат {chat_id}.")
                 except Exception as e:
                     print(f"Ошибка при отправке расписания для группы {group_name}: {e}")

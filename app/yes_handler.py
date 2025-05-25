@@ -2,18 +2,20 @@
 from aiogram import Router, F, types
 from aiogram.types import ReplyKeyboardRemove
 from Database.db import Database
-from app.answer_button import GroupData
+from aiogram.fsm.context import FSMContext
 
 yes_handler_router = Router()
 db = Database()
 
 @yes_handler_router.message(F.text == 'Да')
-async def yes(message: types.Message):
+async def yes(message: types.Message, state: FSMContext):
     chat_id = message.chat.id
-    group_name = GroupData.group_name
+    data = await state.get_data()
+    group_name = data.get("group_name")
+    username = message.from_user.username
     if group_name:
         await message.answer(f"Теперь вы будете получать расписание своей группы {group_name}", reply_markup=ReplyKeyboardRemove())
-        print("Новый пользователь -", chat_id)
+        print(f"Новый пользователь - @{username} его ID - {chat_id} ")
         async with db:
             await db.add_contact(chat_id, group_name)
 
