@@ -15,7 +15,7 @@ async def yes(message: types.Message, state: FSMContext):
     username = message.from_user.username
     date_registr = datetime.now()
     if group_name:
-        await message.answer(f"Теперь вы будете получать расписание своей группы {group_name}", reply_markup=ReplyKeyboardRemove())
         async with db:
             await db.add_contact(chat_id, group_name, username, date_registr)
 
+        await message.answer(f"Теперь вы будете получать расписание своей группы {group_name}", reply_markup=ReplyKeyboardRemove())
