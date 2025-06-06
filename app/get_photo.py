@@ -9,10 +9,11 @@ import os
 get_photo_router = Router()
 
 
-@get_photo_router.message(F.text == '287335')
+@get_photo_router.message(F.text == '14888841')
 async def get_photo(message: types.Message = None):
     print("Команда '28733' получена")
     db = Database()
+    await download_and_generate_schedule()
     try:
         start_time = datetime.now()
         async with db:
@@ -20,15 +21,19 @@ async def get_photo(message: types.Message = None):
             for group in group_ids:
                 chat_id = group["chat_id"]
                 group_name = group["group_name"]
-                #download_and_generate_schedule()
+
                 script_dir = os.path.dirname(os.path.abspath(__file__))
                 file_path = os.path.join(script_dir, "..", "output", f"{group_name}.png")
 
-                # Нормализуем путь (убираем `../`)
                 file_path = os.path.normpath(file_path)
+
+                today = datetime.now()
+                tomorrow = today + timedelta(days=1)
+                caption = tomorrow.strftime("%d.%m.%Y") 
+
                 print(file_path)
                 try:
-                    await bot.send_photo(chat_id, types.FSInputFile(file_path))
+                    await bot.send_photo(chat_id, types.FSInputFile(file_path), caption = caption)
                     print(f"Расписание для группы {group_name} отправлено в чат {chat_id}.")
                 except Exception as e:
                     print(f"Ошибка при отправке расписания для группы {group_name}: {e}")            
@@ -37,12 +42,13 @@ async def get_photo(message: types.Message = None):
     finally:
         execution_time = datetime.now() - start_time
         print(f"Время выполнения: {execution_time}")  
+ 
 
 async def scheduled_task():
     """Задача отправки расписания в определённое время."""
     print("Запуск задачи...")
 
-    target_time = time(20, 30)
+    target_time = time(17, 58)
     now = datetime.now()
     next_run = datetime.combine(now.date(), target_time)
 
@@ -60,7 +66,7 @@ async def scheduled_task():
     await asyncio.sleep(delay)
 
     db = Database()
-    download_and_generate_schedule()
+    await download_and_generate_schedule()
     try:
         start_time = datetime.now()
         async with db:
@@ -73,9 +79,15 @@ async def scheduled_task():
 
                 # Нормализуем путь (убираем `../`)
                 file_path = os.path.normpath(file_path)
+
+                today = datetime.now()
+                tomorrow = today + timedelta(days=1)
+                caption = tomorrow.strftime("%d.%m.%Y") 
+
+                print(file_path)
                 try:
-                    await bot.send_photo(chat_id, types.FSInputFile(file_path))
-                    
+                    await bot.send_photo(chat_id, types.FSInputFile(file_path), caption = caption)
+
                     print(f"Расписание для группы {group_name} отправлено в чат {chat_id}.")
                 except Exception as e:
                     print(f"Ошибка при отправке расписания для группы {group_name}: {e}")

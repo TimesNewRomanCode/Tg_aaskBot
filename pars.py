@@ -10,13 +10,11 @@ from datetime import datetime, timedelta
 from openpyxl.styles import Border, Side
 
 
-def download_and_generate_schedule():
+async def download_and_generate_schedule():
     today = datetime.now()
     day_of_week = today.weekday()
 
-    if day_of_week == 5:  # Суббота
-        target_day = today + timedelta(days=2)
-    elif day_of_week == 6:  # Воскресенье
+    if day_of_week == 6:  # Воскресенье
         target_day = today + timedelta(days=1)
     else:
         target_day = today + timedelta(days=1)
@@ -163,4 +161,3 @@ def parse_and_generate_tables(INPUT_XLS):
         os.remove(f"{INPUT_XLS}x")
 
     return True
-download_and_generate_schedule()
